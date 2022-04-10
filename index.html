@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+  align-items: center;
+  background: #e3e3e3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+.rates{
+    display:flex; 
+    flex-direction:row;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    height: 100%;
+}
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+    <style>
+        /* body {
+  align-items: center;
+  background: #e3e3e3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+} */
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+.rates{
+    display:flex; 
+    flex-direction:row;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    height: 100%;
+}
+
+.omg{
+  width:20px;height:15px;margin-left: 5px;
+}
+
+@media (max-width: 600px)
+{
+  .slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 50px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 50px;
+  width: 250px;
+}
+.rates{
+    display:flex; 
+    flex-direction:row;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    height: 100%;
+}
+
+.omg{
+  width:15px;height:13px;margin-left: 1.5px;
+}
+
+.fontt{
+  font-size:9px;
+}
+
+.fa-solid{
+  font-size: 1.2em
+}
+
+.fa-2x{
+  font-size: 1.2em;
+}
+
+}
+    </style>
+
+
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+               <div class="rates">
+                <i style="color:green" class="fa-solid fa-caret-up fa-2x"></i>
+                    <img class="omg" src="https://www.estudopratico.com.br/wp-content/uploads/2016/07/significado-bandeira-uniao-europeia-1200x675.jpg" alt="">
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png" alt="">
+                    <div class="fontt">EURUSD 0.7358</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:red" class="fa-solid fa-caret-down fa-2x"></i>
+                    <img class="omg" src="https://static.wikia.nocookie.net/harrypotter/images/6/68/Rei.gif/revision/latest?cb=20141229221148&path-prefix=pt-br" alt="">
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png" alt="">
+                    <div class="fontt">GBPUSD 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:green" class="fa-solid fa-caret-up fa-2x"></i>
+                    <img class="omg" src="https://static.wikia.nocookie.net/harrypotter/images/6/68/Rei.gif/revision/latest?cb=20141229221148&path-prefix=pt-br" alt="">
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png" alt="">
+                    <div class="fontt">GBPJPY 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:red" class="fa-solid fa-caret-down fa-2x"></i>
+                    <img class="omg" src="https://www.estudopratico.com.br/wp-content/uploads/2016/07/significado-bandeira-uniao-europeia-1200x675.jpg" alt="">
+                    <img class="omg" src="https://static.wikia.nocookie.net/harrypotter/images/6/68/Rei.gif/revision/latest?cb=20141229221148&path-prefix=pt-br" alt="">
+                    <div class="fontt">EURGBP 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:green" class="fa-solid fa-caret-up fa-2x"></i>
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png" alt="">
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png" alt="">
+                    <div class="fontt">AUDUSD 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:green" class="fa-solid fa-caret-up fa-2x"></i>
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png" alt="">
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png" alt="">
+                    <div class="fontt">AUDJPY 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:green" class="fa-solid fa-caret-up fa-2x"></i>
+                    <img class="omg" src="https://static.todamateria.com.br/upload/ca/na/canadabandeirabb.jpg" alt="">
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png" alt="">
+                    <div class="fontt">CADJPY 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:red" class="fa-solid fa-caret-down fa-2x"></i>
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png" alt="">
+                    <img class="omg" src="https://static.todamateria.com.br/upload/ca/na/canadabandeirabb.jpg" alt="">
+                    <div class="fontt">USDCAD 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:green" class="fa-solid fa-caret-up fa-2x"></i>
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png" alt="">
+                    <img class="omg" src="https://www.estudopratico.com.br/wp-content/uploads/2016/07/significado-bandeira-uniao-europeia-1200x675.jpg" alt="">
+                    <div class="fontt">AUDEUR 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:red" class="fa-solid fa-caret-down fa-2x"></i>
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png" alt="">
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png" alt="">
+                    <div class="fontt">USDJPY 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:red" class="fa-solid fa-caret-down fa-2x"></i>
+                    <img class="omg" src="https://www.estudopratico.com.br/wp-content/uploads/2016/07/significado-bandeira-uniao-europeia-1200x675.jpg" alt="">
+                    <img class="omg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png" alt="">
+                    <div class="fontt">EURJPY 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:red" class="fa-solid fa-caret-down fa-2x"></i>
+                    <!-- <img style="width:20px;height:15px;margin-left: 5px;" src="https://static.todamateria.com.br/upload/ca/na/canadabandeirabb.jpg" alt=""> -->
+                    <img class="omg" src="https://gemforex.com/images/icon/cfd/us500.png" alt="">
+                    <div class="fontt">US500 0.6647</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:green" class="fa-solid fa-caret-up fa-2x"></i>
+                    <!-- <img style="width:20px;height:15px;margin-left: 5px;" src="https://a-static.mlcdn.com.br/1500x1500/bandeira-do-suica-90x128cm-banderminas/wgilbandeiras/315/659043d8268b1b35eb0453fdf732aef1.jpg" alt=""> -->
+                    <img class="omg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRQpYp6UGvyW2kg0E317noCFL3cdLecaZ20w&usqp=CAU" alt="">
+                    <div class="fontt">GER40 0.5646</div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="rates">
+                    <i style="color:green" class="fa-solid fa-caret-up fa-2x"></i>
+                    <!-- <img style="width:20px;height:15px;margin-left: 5px;" src="" alt=""> -->
+                    <img class="omg" src="https://gemforex.com/images/icon/cfd/nasdaq-us100.png" alt="">
+                    <div class="fontt">US100 0.6647</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('http://api.exchangeratesapi.io/v1/latest?access_key=8be340ac94a8c8391a0ddcf86d093c13&format=1')
+        .then(e=>{
+            return e.json()
+        })
+        .then(res=>{
+            console.log(res)
+        })
+    </script>
+</body>
+</html>
